@@ -1,0 +1,582 @@
+
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #4caf50;
+            --accent-color: #8bc34a;
+            --text-color: #333;
+            --light-color: #f5f5f5;
+            --dark-color: #1b5e20;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--light-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .logofoto{
+            height: 50px;
+            width: 50px;
+            align-self: start;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-img {
+            width: 40px;
+            height: auto;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--dark-color);
+        }
+        
+
+        section {
+            padding: 80px 0;
+        }
+        
+        section h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+
+        .about {
+            background-color: white;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 30px;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+
+        .mission-vision {
+            background-color: var(--light-color);
+        }
+        
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .card {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .card-icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        
+
+        .what-we-do {
+            background-color: white;
+        }
+        
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .service {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: var(--light-color);
+        }
+        
+        .service h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+
+        .problem {
+            background-color: var(--dark-color);
+            color: white;
+        }
+        
+        .problem h2 {
+            color: white;
+        }
+        
+        .problem-stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .stat {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+        
+        .stat h3 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        
+
+        .solution {
+            background-color: white;
+        }
+        
+        .solutions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .solution-card {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: var(--light-color);
+            text-align: center;
+        }
+        
+        .solution-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+                .Register {
+            background-color: white;
+        }
+        
+        .Register {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .Register-card {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: var(--light-color);
+            text-align: center;
+        }
+        
+        .Register-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .inicioSesion {
+            background-color: white;
+        }
+        
+        .inicioSesion {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .inicioSesion-card {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: var(--light-color);
+            text-align: center;
+        }
+        
+        .inicioSesion-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+/* Contenedor de redes sociales */
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0 25px 0;
+}
+
+/* Estilos para los íconos sociales */
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+    filter: brightness(0) invert(1); /* Hace los íconos blancos */
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.social-icons a:hover .social-icon {
+    filter: none; /* Restaura el color original al hacer hover */
+}
+
+/* Estilo para el título "Síguenos" */
+.footer-section h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+    transform: translateX(-50%);
+}
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+        }
+        .form-section {
+            background-color: #dff0d8;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-section h2 {
+            text-align: center;
+            color: #2e6e2c;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #3c763d;
+        }
+        
+        form input {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #a3d7a5;
+            border-radius: 4px;
+            font-size: 1rem;
+            background-color: #f9fff9;
+        }
+        
+        form input:focus {
+            outline: none;
+            border-color: #5cb85c;
+            box-shadow: 0 0 4px #5cb85c77;
+        }
+        
+        form button {
+            margin-top: 20px;
+            background-color: #4cae4c;
+            color: white;
+            padding: 12px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        form button:hover {
+            background-color: #449d44;
+        }
+        /* Estilos adicionales para las páginas de Persona 3 */
+
+/* Estilos para los productos */
+.service img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Estilos para los comentarios */
+#listaComentarios {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+#listaComentarios h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#formComentario label {
+    display: block;
+    margin-top: 15px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#formComentario input,
+#formComentario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#formComentario textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Estilos para las tarjetas de comentarios */
+.comentario-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.comentario-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.comentario-card em {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.comentario-card p {
+    margin-top: 10px;
+}
+
+/* Estilos para mensajes de alerta */
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
