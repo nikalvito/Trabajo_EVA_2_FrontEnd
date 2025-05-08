@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFood - Reducción del Desperdicio Alimentario</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="img/Recurso 11.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="img/Recurso 5.svg" alt="Logo EcoFood" class="logo-img">
+                    EcoFood
+                </div>
+                <ul>
+                    <li><a href="home.html">Productos</a></li>
+                    <li><a href="comentarios.html">Comentarios</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="register.html">Registrate</a></li>
+                    <li><a href="login.html">Inicia Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Reducción del desperdicio alimentario</h1>
+            <p>Únete a la reducción del desperdicio de alimentos.</p>
+            <a href="register.html" class="btn">¡Unete a nosotros!</a>
+            <div id="fraseMotivadora" class="alert alert-success text-center mt-4">
+            </div>
+            <script>
+                const frases = [
+                    "Cada pequeño gesto cuenta.",
+                    "La sostenibilidad comienza en casa.",
+                    "Juntos podemos hacer la diferencia.",
+                    "Reduce, reutiliza y recicla.",
+                    "El cambio empieza contigo."
+                ];
+                const fraseMotivadora = document.getElementById('fraseMotivadora');
+                fraseMotivadora.innerHTML = `<h2>${frases[Math.floor(Math.random() * frases.length)]}</h2>`;
+            </script>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>¿Quiénes somos?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Somos un equipo diverso de expertos en medio ambiente, tecnológico y desarrollo comunitario, unidos por un propósito común: generar conciencia; elaborar y activar soluciones para enfrentar este desafío global.</p>
+                    <p>Nuestra pasión por la sostenibilidad y la seguridad alimentaria nos impulsa a trabajar cada día para crear un impacto positivo en nuestro planeta.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Equipo EcoFood">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="mission" class="mission-vision">
+        <div class="container">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon"></div>
+                    <h3>Nuestra misión</h3>
+                    <p>Nuestra misión es conectar a las comunidades sobre la importancia de reducir el desperdicio de alimentos, ofreciendo herramientas prácticas, educativas y tecnológicas para fomentar hábitos sostenibles que mejoren la seguridad alimentaria y protejan el medio ambiente.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"></div>
+                    <h3>Nuestra visión</h3>
+                    <p>Nuestra visión es un mundo donde los alimentos se valoren y utilicen de manera responsable, garantizando la seguridad alimentaria para todos y reduciendo al máximo el desperdicio, generando un impacto positivo en el medio ambiente, la economía y la sociedad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="what-we-do" class="what-we-do">
+        <div class="container">
+            <h2>¿Qué hacemos?</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Educamos</h3>
+                    <p>Generamos conciencia a través de programas educativos que enseñan sobre el impacto del desperdicio de alimentos y cómo reducirlo en nuestra vida diaria.</p>
+                </div>
+                <div class="service">
+                    <h3>Conectamos</h3>
+                    <p>Unimos a comunidades, empresas y organizaciones para crear redes de colaboración que promuevan prácticas sostenibles en el manejo de alimentos.</p>
+                </div>
+                <div class="service">
+                    <h3>Innovamos</h3>
+                    <p>Desarrollamos soluciones tecnológicas y creativas para abordar el problema del desperdicio alimentario desde diferentes ángulos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="problem" class="problem">
+        <div class="container">
+            <h2>¿Cuál es el problema?</h2>
+            <div class="problem-stats">
+                <div class="stat">
+                    <h3>1/3</h3>
+                    <p>de los alimentos producidos globalmente se desperdician (FAO, 2021)</p>
+                </div>
+                <div class="stat">
+                    <h3>8-10%</h3>
+                    <p>de las emisiones mundiales de gases de efecto invernadero provienen del desperdicio alimentario</p>
+                </div>
+                <div class="stat">
+                    <h3>800M</h3>
+                    <p>personas sufren inseguridad alimentaria en el mundo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="solution" class="solution">
+        <div class="container">
+            <h2>¿La solución? ¡Tu ayuda!</h2>
+            <div class="solutions">
+                <div class="solution-card">
+                    <h3>Consume responsablemente</h3>
+                    <p>Planifica tus compras y utiliza alimentos de forma eficiente. Pequeños cambios en tus hábitos pueden marcar una gran diferencia.</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Apoya iniciativas locales</h3>
+                    <p>Compra productos locales y de temporada. Apoya a agricultores y negocios que promueven prácticas sostenibles.</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Difunde conciencia</h3>
+                    <p>Comparte información sobre el impacto del desperdicio alimentario con tu comunidad. Juntos podemos multiplicar el efecto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EcoFood</h3>
+                    <p>Generando conciencia y soluciones para reducir el desperdicio alimentario.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>contacto@ecofood.org</p>
+                    <p>+56 9 1234 5678</p>
+                    <p>Calle Verde 123, Ciudad Sostenible</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons-container">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                                <img src="img/square-facebook-brands-solid.svg" alt="Facebook" class="social-icon">
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                                <img src="img/instagram-brands-solid.svg" alt="Instagram" class="social-icon">
+                            </a>
+                            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                <img src="img/square-x-twitter-brands.svg" alt="Twitter" class="social-icon">
+                            </a>
+                            <a href="https://wa.me/56912345678" target="_blank" aria-label="WhatsApp">
+                                <img src="img/square-whatsapp-brands.svg" alt="WhatsApp" class="social-icon">
+    </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios - EcoFood</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="img/Recurso 11.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="img/Recurso 5.svg" alt="Logo EcoFood" class="logo-img">
+                    EcoFood
+                </div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="home.html">Productos</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>Comentarios de Usuarios</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <form id="formComentario">
+                        <label for="nombreUsuario">Tu nombre:</label>
+                        <input type="text" id="nombreUsuario" required>
+                        <label for="comentarioTexto">Tu comentario:</label>
+                        <textarea id="comentarioTexto" required></textarea>
+                        <button type="submit" class="btn">Publicar</button>
+                    </form>
+                </div>
+                <div class="about-image">
+                    <div id="listaComentarios">
+                        <!-- Comentarios se cargarán dinámicamente con JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EcoFood</h3>
+                    <p>Generando conciencia y soluciones para reducir el desperdicio alimentario.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>contacto@ecofood.org</p>
+                    <p>+56 9 1234 5678</p>
+                    <p>Calle Verde 123, Ciudad Sostenible</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons-container">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                                <img src="img/square-facebook-brands-solid.svg" alt="Facebook" class="social-icon">
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                                <img src="img/instagram-brands-solid.svg" alt="Instagram" class="social-icon">
+                            </a>
+                            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                <img src="img/square-x-twitter-brands.svg" alt="Twitter" class="social-icon">
+                            </a>
+                            <a href="https://wa.me/56912345678" target="_blank" aria-label="WhatsApp">
+                                <img src="img/square-whatsapp-brands.svg" alt="WhatsApp" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>

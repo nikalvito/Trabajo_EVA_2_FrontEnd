@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - EcoFood</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function registerAccount(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('register-name').value;
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+
+            const accounts = JSON.parse(localStorage.getItem('accounts')) || [];
+            if (accounts.some(account => account.email === email)) {
+                alert('Este correo ya está registrado.');
+                return;
+            }
+            accounts.push({ name, email, password });
+            localStorage.setItem('accounts', JSON.stringify(accounts));
+            alert('Cuenta registrada exitosamente.');
+            window.location.href = 'login.html'; 
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="btn">Volver al inicio</a>
+    </header>
+    <section id="register" class="form-section">
+        <h2>Registrarse</h2>
+        <form onsubmit="registerAccount(event)">
+            <label for="register-name">Nombre completo:</label>
+            <input type="text" id="register-name" name="register-name" required>
+            <label for="register-email">Correo electrónico:</label>
+            <input type="email" id="register-email" name="register-email" required>
+            <label for="register-password">Contraseña:</label>
+            <input type="password" id="register-password" name="register-password" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+</body>
+</html>
